@@ -1,0 +1,2 @@
+# Hashes of file build rules.
+6cc822b1abd3783dd927c976753a48ff CMakeFiles/Geometrica_autogen
