@@ -1,4 +1,0 @@
-/home/alseuser/Público/ejercicio_1/Geometrica/ejec/CMakeFiles/rebuild_cache.dir
-/home/alseuser/Público/ejercicio_1/Geometrica/ejec/CMakeFiles/Geometrica.dir
-/home/alseuser/Público/ejercicio_1/Geometrica/ejec/CMakeFiles/edit_cache.dir
-/home/alseuser/Público/ejercicio_1/Geometrica/ejec/CMakeFiles/Geometrica_autogen.dir
