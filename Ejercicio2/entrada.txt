@@ -1,0 +1,7 @@
+cu 2 lado 0 xc 0 xy
+cu 1 lado 0 xc 1 xy
+p 3 lado 0 xc 2 xy
+t 4 base 2 altura 1 xc 1 xy
+p 2 lado 2 xc 3 xy
+ci 2 radio 1 xc 2 xy
+ci 3 radio 2 xc 0 xy
