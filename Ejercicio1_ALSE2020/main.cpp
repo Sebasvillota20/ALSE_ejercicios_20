@@ -12,6 +12,7 @@ using namespace std;
 int main(int argc, char *argv[])
 {
     vector<Geometrica*> Data;
+    vector<Geometrica*>:: iterator iter;
     int fig = 0;
     float r=0, l=0, b=0, h=0, x=0, y=0;
     char Acep;
@@ -71,13 +72,9 @@ int main(int argc, char *argv[])
 
     }
 
+for( iter =begin(Data) ; iter != end(Data) ; iter++){
+    cout << "Figura" << ": "<< "Perímetro: " << (*iter)->Perimetro() << " y área: " << (*iter)->Area() << endl;
+}
 
-    for (int i = 0; i < Data.size(); i++){
-        cout << "Figura(" << i << "): "<< "Perímetro: " << Data.at(i)->Perimetro() << " y área: " << Data.at(i)->Area() << endl;
-    }
-
-    for (int i = 0; i < Data.size(); i++){
-        delete Data.at(i);
-    }
     return 0;
 }
