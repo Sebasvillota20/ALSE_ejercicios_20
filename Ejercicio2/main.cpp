@@ -19,28 +19,36 @@ enum Fig {
 
 int main(int argc, char *argv[])
 {
-
-//    if(argc != 2){
-//        std::cout << "El programa se usa así:" << std::endl;
-//        std::cout << "polynom path_to_file" << std::endl;
-//        std::cout << "Se debe indicar la ruta al archivo a leer" << std::endl;
-//        return 1;
-//    }
-
-//    std::string path;
-//    path = argv[1];
-//    std::ifstream archivo;
-//    archivo.open(path);
-
 vector <string> a;
+    if(argc != 2){
+        std::cout << "El programa se usa así:" << std::endl;
+        std::cout << "polynom path_to_file" << std::endl;
+        std::cout << "Se debe indicar la ruta al archivo a leer" << std::endl;
+        return 1;
+    }
 
-a.push_back("cu 2 lado 0 xc 0 xy");
-a.push_back("cu 1 lado 0 xc 1 xy");
-a.push_back("p 3 lado 0 xc 2 xy");
-a.push_back("t 4.5 base 2.5 altura 1 xc 1 xy");
-a.push_back("p 2.5 lado 2 xc 3 xy");
-a.push_back("ci 22.2 radio 1 xc 2 xy");
-a.push_back("ci 3 radio 2 xc 0 xy");
+    string path;
+    path = argv[1];
+    ifstream archivo;
+    archivo.open(path);
+    std::cout << "Se abrirá el archivo: " << path << std::endl;
+
+if(archivo.is_open()){
+    // Aquí va el codigo que se va a hacer para leer el archivo
+    while(!archivo.eof()){
+        getline(archivo, path);
+        a.push_back(path.c_str());
+    }
+}
+archivo.close();
+
+//a.push_back("cu 2 lado 0 xc 0 xy");
+//a.push_back("cu 1 lado 0 xc 1 xy");
+//a.push_back("p 3 lado 0 xc 2 xy");
+//a.push_back("t 4.5 base 2.5 altura 1 xc 1 xy");
+//a.push_back("p 2.5 lado 2 xc 3 xy");
+//a.push_back("ci 22.2 radio 1 xc 2 xy");
+//a.push_back("ci 3 radio 2 xc 0 xy");
 
 string ci="";
 string term;
